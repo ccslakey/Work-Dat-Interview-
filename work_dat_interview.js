@@ -10,6 +10,7 @@ if (Meteor.isServer) {
         { owner: this.userId }
       ]
     });
+  })
 }
 
 if (Meteor.isClient) {
@@ -131,3 +132,4 @@ Meteor.methods({
     Tasks.update(taskId, { $set: { private: setToPrivate } });
   }
 });
+
